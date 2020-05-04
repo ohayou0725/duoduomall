@@ -1,0 +1,20 @@
+package com.ohayou.duoduomall.product.service;
+
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.ohayou.common.utils.PageUtils;
+import com.ohayou.duoduomall.product.entity.SkuInfoEntity;
+
+import java.util.Map;
+
+/**
+ * sku信息
+ *
+ * @author ohayou
+ * @email llyyffhh@gmail.com
+ * @date 2020-05-04 13:12:58
+ */
+public interface SkuInfoService extends IService<SkuInfoEntity> {
+
+    PageUtils queryPage(Map<String, Object> params);
+}
+
